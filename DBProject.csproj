@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7469805D-658D-4F5C-BB24-011140E78151}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DBProject</RootNamespace>
+    <AssemblyName>DBProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssesmentComponent.cs" />
+    <Compile Include="AssesmentComponent.Designer.cs">
+      <DependentUpon>AssesmentComponent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssesmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssesmentForm.Designer.cs">
+      <DependentUpon>AssesmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssessmentComp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssessmentComp.Designer.cs">
+      <DependentUpon>AssessmentComp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassAttendence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassAttendence.Designer.cs">
+      <DependentUpon>ClassAttendence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CLOs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CLOs.Designer.cs">
+      <DependentUpon>CLOs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration.cs" />
+    <Compile Include="Delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete.Designer.cs">
+      <DependentUpon>Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Evaluation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Evaluation.Designer.cs">
+      <DependentUpon>Evaluation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Result.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Result.Designer.cs">
+      <DependentUpon>Result.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ruberic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ruberic.Designer.cs">
+      <DependentUpon>Ruberic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RubericLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RubericLevel.Designer.cs">
+      <DependentUpon>RubericLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search.Designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentResult.Designer.cs">
+      <DependentUpon>StudentResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update.Designer.cs">
+      <DependentUpon>Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAttendance.Designer.cs">
+      <DependentUpon>ViewAttendance.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AssesmentComponent.resx">
+      <DependentUpon>AssesmentComponent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssesmentForm.resx">
+      <DependentUpon>AssesmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssessmentComp.resx">
+      <DependentUpon>AssessmentComp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassAttendence.resx">
+      <DependentUpon>ClassAttendence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CLOs.resx">
+      <DependentUpon>CLOs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete.resx">
+      <DependentUpon>Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Evaluation.resx">
+      <DependentUpon>Evaluation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Result.resx">
+      <DependentUpon>Result.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ruberic.resx">
+      <DependentUpon>Ruberic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RubericLevel.resx">
+      <DependentUpon>RubericLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentResult.resx">
+      <DependentUpon>StudentResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update.resx">
+      <DependentUpon>Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAttendance.resx">
+      <DependentUpon>ViewAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
